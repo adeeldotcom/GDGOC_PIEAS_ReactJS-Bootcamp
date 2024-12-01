@@ -1,0 +1,83 @@
+.fiction-books-section {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1e1e2f;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.fiction-books-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f8f8ff;
+}
+
+.fiction-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.fiction-book-card {
+  background: rgba(42, 42, 59, 0.8);
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 20px;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fiction-book-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #8ec6ff, #f78fb3);
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.fiction-book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.fiction-book-card-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #8ec6ff;
+  margin-bottom: 10px;
+}
+
+.fiction-book-card-detail {
+  margin-bottom: 8px;
+  color: #b0b0c0;
+}
+
+.fiction-book-card:hover .fiction-book-card-detail {
+  color: #ffffff;
+}
+
+.fiction-books-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.fiction-books-grid::-webkit-scrollbar-thumb {
+  background-color: #4b4b60;
+  border-radius: 4px;
+}
+
+.fiction-books-grid::-webkit-scrollbar-thumb:hover {
+  background-color: #6b6b85;
+}
